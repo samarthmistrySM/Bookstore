@@ -1,0 +1,82 @@
+[
+  {
+    "name": "The Alchemist",
+    "author": "Paulo Coelho",
+    "description": "A timeless philosophical novel about Santiago, a shepherd who embarks on a journey to discover his personal legend and follow his dreams. Through mystical encounters, life lessons, and a journey across the desert, the book teaches the importance of listening to one’s heart and pursuing one's true purpose in life.",
+    "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTtrqyLboKTpWbJqWer_ndK5rTeHRiFN8RkUKK8aERHhe-TxuhQS2vyNsSMi1-uzm6znKm9sMn22-lNxZXbhPppI-JXuQAdx1Fg5DfC22ack31xQHj60ou2ng",
+    "price": 399,
+    "discount": 10
+  },
+  {
+    "name": "Atomic Habits",
+    "author": "James Clear",
+    "description": "A practical guide to building positive habits, breaking bad ones, and making small changes that compound into remarkable results over time. The book explains the power of habit stacking, identity-based habits, and how tiny behavioral shifts can lead to long-term success in personal and professional life.",
+    "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSjDwTolkHoL4fGliN4Tz3eBLObuVkYDrC1dlwslTICWoyWQWtivEGU0xL8MfBoK2dvKa7iaT8Ko8H4bAANynkt61T0i4oM74G0jVCbqFhsetPJ7QlONUrzAQ",
+    "price": 550,
+    "discount": 15
+  },
+  {
+    "name": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "description": "A deep dive into human history, tracing the journey of Homo sapiens from the early days of hunter-gatherers to the modern digital era. The book explores how culture, religion, and economics have shaped civilizations and questions the impact of human progress on our society and planet.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyV02y9C8d-gdU4_CH-yUlWWjXYZGXrlyMtkT9-MQG9HCUTIQewkCfAT4&s=10",
+    "price": 799,
+    "discount": 20
+  },
+  {
+    "name": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "description": "A refreshing take on self-help, this book challenges conventional positivity and emphasizes the importance of choosing what truly matters in life. With raw honesty, humor, and real-life examples, the author teaches how to embrace struggles, accept limitations, and focus only on things that genuinely add value to one’s life.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg6RJoDFGZZac0-lhTZaCDzxCwOtFt35yG4xQZ6P0fT351iZvSffSTG0HO&s=10",
+    "price": 450,
+    "discount": 12
+  },
+  {
+    "name": "Ikigai: Japanese Secret",
+    "author": "Héctor García",
+    "description": "An insightful exploration of the Japanese concept of ‘Ikigai,’ which translates to ‘reason for being.’ The book shares research-backed wisdom from Okinawa, one of the world's longest-living communities, explaining how purpose, health, social connections, and daily joy contribute to a fulfilling life.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtS3Flc7gdM05poWqJ2EMApmdKiaigwdhBRzVfXnHJB1CYsvhwepxDOfg&s=10",
+    "price": 499,
+    "discount": 10
+  },
+  {
+    "name": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "description": "A revolutionary financial education book that contrasts the money mindset of two father figures—the author's biological ‘Poor Dad’ and his mentor ‘Rich Dad.’ It challenges traditional notions of wealth, explains the importance of financial literacy, assets vs. liabilities, and how smart investments can lead to financial independence.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8F_CvcawPnknz08VPj_pkbGYJo7Z3L_LnA&s",
+    "price": 599,
+    "discount": 18
+  },
+  {
+    "name": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "description": "A fascinating exploration of how psychology affects financial decisions. The book explains how emotions, habits, and personal experiences influence wealth management, investment strategies, and financial stability, offering timeless lessons that go beyond technical finance knowledge.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdGwRRqUVk9ep5eNqqp8YXDWFYhrYc5ozszg&s",
+    "price": 650,
+    "discount": 14
+  },
+  {
+    "name": "Think Like a Monk",
+    "author": "Jay Shetty",
+    "description": "A self-improvement book based on ancient wisdom and modern psychology. The author, a former monk, shares practical insights on mindfulness, gratitude, relationships, and dealing with negativity. The book teaches how to apply a monk’s mindset to live a more peaceful, fulfilling, and purposeful life.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1F3gcO5qV0eVQMf8vpICUeJnkcPw0FgW1n6cpLzykSHIRj6ylyK3Ye-A&s=10",
+    "price": 699,
+    "discount": 20
+  },
+  {
+    "name": "Deep Work",
+    "author": "Cal Newport",
+    "description": "A must-read for anyone looking to enhance focus and productivity. The book explains how deep, undistracted work leads to mastering complex skills and achieving extraordinary results. It contrasts deep work with shallow work and provides strategies for cultivating concentration in an age of constant digital distractions.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUu2B9oqoJNlhHFCsSLH9kPMEha8NQI8XfQ&s",
+    "price": 799,
+    "discount": 15
+  },
+  {
+    "name": "Can't Hurt Me",
+    "author": "David Goggins",
+    "description": "A powerful memoir of overcoming adversity, mental resilience, and pushing beyond limits. The book recounts Goggins' transformation from an abused child and an overweight young man to a Navy SEAL and an ultramarathon runner. It provides lessons on discipline, mental toughness, and how embracing discomfort can unlock untapped potential.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk-N3MhGZF36RdCjoBuer-ds6crVja2skzbA&s",
+    "price": 999,
+    "discount": 25
+  }
+]
