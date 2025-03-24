@@ -9,10 +9,37 @@ import {
   TextInput,
   ScrollView,
 } from 'react-native';
+import {useDispatch, useSelector} from 'react-redux';
+import {loginUser, registerUser} from '../../redux/slices/authSlice.ts';
+import {AppDispatch, RootState} from '../../redux/store.ts';
 
 const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const [phoneNumber, setPhoneNumber] = useState<string>('');
+  const [fullName, setFullName] = useState<string>('');
+
+  const {loading} = useSelector((state: RootState) => state.auth);
+
+  const dispatch = useDispatch<AppDispatch>();
+
+  const handleLogin = async () => {
+    console.log('login');
+    dispatch(await loginUser({email:email.toLowerCase(), password}));
+  };
+
+  const handleRegister = async () => {
+    dispatch(
+      await registerUser({
+        email:email.toLowerCase(),
+        password,
+        phoneNumber: parseInt(phoneNumber, 10),
+        fullName,
+      }),
+    );
+  };
 
   return (
     <SafeAreaView style={styles.container}>
@@ -47,19 +74,27 @@ const Login = () => {
           {!isLogin && (
             <View style={styles.inputContainer}>
               <Text style={styles.label}>Full Name</Text>
-              <TextInput style={styles.input} />
+              <TextInput style={styles.input} onChangeText={setFullName} />
             </View>
           )}
 
           <View style={styles.inputContainer}>
             <Text style={styles.label}>Email</Text>
-            <TextInput style={styles.input} keyboardType="email-address" />
+            <TextInput
+              style={styles.input}
+              keyboardType="email-address"
+              onChangeText={setEmail}
+            />
           </View>
 
           {!isLogin && (
             <View style={styles.inputContainer}>
               <Text style={styles.label}>Phone Number</Text>
-              <TextInput style={styles.input} keyboardType="phone-pad" />
+              <TextInput
+                style={styles.input}
+                keyboardType="phone-pad"
+                onChangeText={setPhoneNumber}
+              />
             </View>
           )}
 
@@ -68,6 +103,7 @@ const Login = () => {
             <TextInput
               style={styles.input}
               secureTextEntry={!passwordVisible}
+              onChangeText={setPassword}
             />
           </View>
 
@@ -83,7 +119,7 @@ const Login = () => {
             )}
           </View>
 
-          <TouchableOpacity style={styles.authButton}>
+          <TouchableOpacity disabled={loading} style={[styles.authButton, loading && {backgroundColor: '#A03037'}]} onPress={()=> isLogin ? handleLogin() : handleRegister()}>
             <Text style={styles.authButtonText}>
               {isLogin ? 'Login' : 'Signup'}
             </Text>
@@ -204,7 +240,7 @@ const styles = StyleSheet.create({
     color: '#A03037',
   },
   authButton: {
-    backgroundColor: '#A03037',
+    backgroundColor: '#da424b',
     paddingVertical: 12,
     borderRadius: 8,
     alignItems: 'center',

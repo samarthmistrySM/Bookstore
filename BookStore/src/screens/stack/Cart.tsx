@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   StyleSheet,
   SafeAreaView,
@@ -7,7 +7,6 @@ import {
   Text,
   TouchableOpacity,
 } from 'react-native';
-import books from '../../mock/data.json';
 import Header from '../../components/Header.tsx';
 import {SFSymbol} from 'react-native-sfsymbols';
 import {useNavigation} from '@react-navigation/native';
@@ -16,19 +15,48 @@ import UserDetailsModal from '../../components/UserDetailsModal.tsx';
 import {Address} from '../../types.ts';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {StackNavParamList} from '../../navigation/types.ts';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../redux/store.ts';
+import {CartItemType} from '../../types.ts';
 
 const Cart = () => {
   const navigation =
     useNavigation<NativeStackNavigationProp<StackNavParamList>>();
+
   const [isUserDataModalOpen, setIsUserDataModalOpen] =
     useState<boolean>(false);
   const [addresses, setAddresses] = useState<Address[]>([]);
+  const [total, setTotal] = useState(0);
+
+  const userState: any = useSelector((state: RootState) => state.auth);
+
   const handleModalClose = () => {
     setIsUserDataModalOpen(false);
   };
+
   const handelAddAddress = (address: Address) => {
     setAddresses([...addresses, address]);
   };
+
+  const calculatePrice = (discount: number, price: number) => {
+    const discountedPrice = price - price * (discount / 100);
+    return discountedPrice.toFixed(2);
+  };
+
+  useEffect(() => {
+    let newTotal = userState.user.cart.reduce(
+      (sum: number, item: CartItemType) => {
+        const price = calculatePrice(item.book.discount, item.book.price);
+        const quantity = item.quantity;
+
+        return sum + parseFloat(price) * quantity;
+      },
+      0,
+    );
+
+    setTotal(newTotal.toFixed(2));
+  }, [userState.loading]);
+
   return (
     <SafeAreaView style={styles.container}>
       <Header screen={'Cart'} />
@@ -37,14 +65,33 @@ const Cart = () => {
           <SFSymbol name={'arrow.left'} style={styles.icon} color={'#000'} />
         </TouchableOpacity>
         <Text style={styles.title}>
-          My Bag <Text style={styles.booksCount}> ({books.length} Items)</Text>
+          My Bag{' '}
+          <Text style={styles.booksCount}>
+            {' '}
+            ({userState.user.cart.length} Items)
+          </Text>
         </Text>
       </View>
-      <ScrollView style={styles.upperContainer} showsVerticalScrollIndicator={false}>
+      <ScrollView
+        style={styles.upperContainer}
+        showsVerticalScrollIndicator={false}>
         <View style={styles.cartContainer}>
-          <CartItem book={books[0]} />
-          <CartItem book={books[1]} />
-          <CartItem book={books[2]} />
+          {userState.user.cart.length === 0 && (
+            <View style={styles.alertContainer}>
+              <Text style={styles.alertText}>Cart is Empty</Text>
+              <TouchableOpacity
+                style={styles.Btn}
+                onPress={() => {
+                  navigation.popToTop();
+                }}>
+                <Text style={styles.btnText}>Shop Something</Text>
+              </TouchableOpacity>
+            </View>
+          )}
+
+          {userState.user.cart.map((item: CartItemType, index: number) => (
+            <CartItem key={index} book={item.book} quantity={item.quantity} />
+          ))}
         </View>
         <View style={styles.customerDetails}>
           <TouchableOpacity
@@ -79,10 +126,12 @@ const Cart = () => {
       <View style={styles.bottom}>
         <View>
           <Text>Total</Text>
-          <Text style={styles.totalCount}>Rs. 3000</Text>
+          <Text style={styles.totalCount}>Rs. {total}</Text>
         </View>
-        <TouchableOpacity style={styles.placeBtn} onPress={()=>navigation.navigate('Closure')}>
-          <Text style={styles.placeBtnText}>Place Order</Text>
+        <TouchableOpacity
+          style={styles.Btn}
+          onPress={() => navigation.navigate('Closure')}>
+          <Text style={styles.btnText}>Place Order</Text>
         </TouchableOpacity>
         <UserDetailsModal
           isModalOpen={isUserDataModalOpen}
@@ -128,6 +177,15 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderColor: '#dadada',
   },
+  alertContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 20,
+  },
+  alertText: {
+    fontSize: 18,
+    marginBottom: 10,
+  },
   customerDetails: {
     padding: 20,
     backgroundColor: '#dadada',
@@ -153,12 +211,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#A03037',
   },
-  placeBtn: {
+  Btn: {
     paddingVertical: 10,
     paddingHorizontal: 20,
     backgroundColor: '#A03037',
   },
-  placeBtnText: {
+  btnText: {
     color: '#fff',
     fontSize: 18,
   },

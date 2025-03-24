@@ -1,0 +1,260 @@
+info: GET /api/v1 200 9 - 47.268 ms
+
+info: GET /favicon.ico 404 47 - 0.436 ms
+
+info: GET /api/v1 200 9 - 0.441 ms
+
+info: GET /api/v1/users 400 56 - 7.224 ms
+
+info: POST /api/v1/login 404 47 - 0.327 ms
+
+info: POST /api/v1/users/login 500 92 - 26.018 ms
+
+info: POST /api/v1/users/register 201 51 - 5.312 ms
+
+info: POST /api/v1/users/register 201 51 - 21.490 ms
+
+info: POST /api/v1/users/register 500 103 - 16.425 ms
+
+info: POST /api/v1/users/register 201 51 - 20.006 ms
+
+info: POST /api/v1/users/register 500 103 - 12.912 ms
+
+info: POST /api/v1/users/login 200 48 - 5.911 ms
+
+info: POST /api/v1/users/login 200 62 - 14.103 ms
+
+info: POST /api/v1/users/login 200 48 - 11.406 ms
+
+info: POST /api/v1/users/login 200 48 - 16.177 ms
+
+info: POST /api/v1/users/login 200 48 - 7.666 ms
+
+info: POST /api/v1/users/login 200 48 - 4.498 ms
+
+info: POST /api/v1/users/login 200 48 - 14.557 ms
+
+info: POST /api/v1/users/login 200 48 - 11.743 ms
+
+info: POST /api/v1/users/login 200 48 - 11.503 ms
+
+info: POST /api/v1/users/login 200 48 - 12.811 ms
+
+info: POST /api/v1/users/login 200 48 - 9.401 ms
+
+info: POST /api/v1/users/login 200 48 - 19.746 ms
+
+info: POST /api/v1/users/login 200 48 - 10.872 ms
+
+info: POST /api/v1/users/login 200 48 - 4.250 ms
+
+info: POST /api/v1/users/login 200 48 - 10.968 ms
+
+info: POST /api/v1/users/login 200 48 - 11.734 ms
+
+info: POST /api/v1/users/login 200 48 - 11.848 ms
+
+info: POST /api/v1/users/login 200 48 - 27.276 ms
+
+info: POST /api/v1/users/login 200 48 - 15.503 ms
+
+info: POST /api/v1/users/login 200 48 - 13.957 ms
+
+info: POST /api/v1/users/login 200 48 - 13.363 ms
+
+info: POST /api/v1/users/login 200 48 - 5.295 ms
+
+info: POST /api/v1/users/login 200 48 - 8.859 ms
+
+info: POST /api/v1/users/login 200 48 - 5.338 ms
+
+info: POST /api/v1/users/login 200 48 - 5.177 ms
+
+info: POST /api/v1/users/login 200 48 - 11.596 ms
+
+info: POST /api/v1/users/login 200 48 - 8.803 ms
+
+info: POST /api/v1/users/login 200 48 - 5.432 ms
+
+info: POST /api/v1/users/login 200 48 - 14.336 ms
+
+info: POST /api/v1/users/login 200 48 - 7.119 ms
+
+info: POST /api/v1/users/login 200 48 - 11.836 ms
+
+info: POST /api/v1/users/login 500 82 - 13.285 ms
+
+info: POST /api/v1/users/login 500 82 - 9.031 ms
+
+info: POST /api/v1/users/login 200 211 - 87.889 ms
+
+info: GET /api/v1/users/ 400 56 - 4.745 ms
+
+info: GET /api/v1/users/ 500 55 - 17.999 ms
+
+info: GET /api/v1/books/ 200 61 - 50.067 ms
+
+info: GET /api/v1/books/ 200 61 - 81.622 ms
+
+info: GET /api/v1/books/ 200 5892 - 20.098 ms
+
+info: POST /api/v1/users/login 200 211 - 105.380 ms
+
+info: PUT /api/v1/books/wishlist 500 89 - 11.337 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 2.556 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 2.118 ms
+
+info: POST /api/v1/users/login 200 211 - 106.084 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 2.250 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 2.528 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 2.002 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 1.429 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 2.125 ms
+
+info: POST /api/v1/users/login 200 211 - 85.647 ms
+
+info: POST /api/v1/users/login 200 211 - 85.350 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 1.859 ms
+
+info: PUT /api/v1/books/wishlist 500 55 - 4.685 ms
+
+info: PUT /api/v1/books/wishlist 500 55 - 6.115 ms
+
+info: PUT /api/v1/books/wishlist 500 55 - 5.755 ms
+
+info: PUT /api/v1/users/67dba6420a2047b9b6f38d5b 404 47 - 5.505 ms
+
+info: GET /api/v1/users/67dba6420a2047b9b6f38d5b 500 55 - 6.315 ms
+
+info: PUT /api/v1/users/wishlist 404 47 - 1.382 ms
+
+info: PUT /api/v1/users/wishlist 404 47 - 0.875 ms
+
+info: PUT /api/v1/books/wishlist 500 55 - 4.358 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 4.541 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 3.545 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 4.717 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 3.834 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 3.500 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 3.969 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 3.022 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 2.776 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 7.637 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 3.896 ms
+
+info: PUT /api/v1/books/wishlist 500 89 - 7.227 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 3.880 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 5.015 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 32.089 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 3.966 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 28.122 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 23.976 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 26.738 ms
+
+info: POST /api/v1/users/login 500 92 - 16.586 ms
+
+info: POST /api/v1/users/register 201 51 - 6.191 ms
+
+info: POST /api/v1/users/login 200 211 - 92.631 ms
+
+info: PUT /api/v1/books/wishlist 200 48 - 22.833 ms
+
+info: PUT /api/v1/books/wishlist 200 84 - 23.636 ms
+
+info: PUT /api/v1/books/wishlist 200 84 - 17.760 ms
+
+info: PUT /api/v1/books/wishlist 200 84 - 27.496 ms
+
+info: PUT /api/v1/books/wishlist 200 84 - 15.705 ms
+
+info: PUT /api/v1/books/wishlist 200 51 - 24.364 ms
+
+info: PUT /api/v1/books/wishlist 200 51 - 26.148 ms
+
+info: PUT /api/v1/books/wishlist 200 47 - 22.051 ms
+
+info: PUT /api/v1/books/wishlist 200 51 - 15.676 ms
+
+info: PUT /api/v1/books/wishlist 200 47 - 14.064 ms
+
+info: PUT /api/v1/books/wishlist 200 51 - 10.854 ms
+
+info: PUT /api/v1/books/wishlist 200 47 - 137.930 ms
+
+info: PUT /api/v1/books/wishlist 200 51 - 13.982 ms
+
+info: PUT /api/v1/books/wishlist 200 47 - 14.965 ms
+
+info: PUT /api/v1/books/cart 500 91 - 29.532 ms
+
+info: PUT /api/v1/books/cart - - - - ms
+
+info: PUT /api/v1/books/cart 200 43 - 23.029 ms
+
+info: PUT /api/v1/books/cart 500 91 - 12.251 ms
+
+info: PUT /api/v1/books/cart 200 43 - 31.761 ms
+
+info: PUT /api/v1/books/cart 200 43 - 31.122 ms
+
+info: PUT /api/v1/books/cart 200 43 - 25.254 ms
+
+info: PUT /api/v1/books/cart 500 91 - 18.945 ms
+
+info: PUT /api/v1/books/cart 200 43 - 76.863 ms
+
+info: PUT /api/v1/books/cart 200 43 - 18.184 ms
+
+info: PUT /api/v1/books/cart 200 43 - 17.044 ms
+
+info: PUT /api/v1/books/addToCart 200 43 - 27.138 ms
+
+info: PUT /api/v1/books/addToCart 200 43 - 30.138 ms
+
+info: PUT /api/v1/books/addToCart 200 43 - 14.954 ms
+
+info: PUT /api/v1/books/removeFromCart 500 57 - 24.056 ms
+
+info: PUT /api/v1/books/removeFromCart 200 47 - 24.613 ms
+
+info: PUT /api/v1/books/removeFromCart 200 47 - 30.287 ms
+
+info: PUT /api/v1/books/removeFromCart 200 47 - 18.370 ms
+
+info: PUT /api/v1/books/removeFromCart 200 47 - 13.437 ms
+
+info: PUT /api/v1/books/removeFromCart 200 47 - 15.114 ms
+
+info: PUT /api/v1/books/removeFromCart 200 47 - 33.112 ms
+
+info: PUT /api/v1/books/removeFromCart 500 91 - 19.092 ms
+
+info: PUT /api/v1/books/removeFromCart 500 91 - 16.679 ms
+
+info: PUT /api/v1/books/removeFromCart 500 57 - 17.975 ms
+

@@ -2,16 +2,37 @@ import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import React, {FC} from 'react';
 import {SFSymbol} from 'react-native-sfsymbols';
 import {Book} from '../types.ts';
+import {useDispatch} from 'react-redux';
+import {addToCart, removeFromCart} from '../redux/slices/dataSlice.ts';
+import {AppDispatch} from '../redux/store.ts';
 
 interface Props {
   book: Book;
+  quantity: number;
 }
 
-const CartItem: FC<Props> = ({book}) => {
+const CartItem: FC<Props> = ({book, quantity}) => {
+  const dispatch = useDispatch<AppDispatch>();
+
   const calculatePrice = (discount: number, price: number) => {
     const discountedPrice = price - price * (discount / 100);
     return discountedPrice.toFixed(2);
   };
+
+  const handelAddToCart = async (bookId: string) => {
+    dispatch(await addToCart(bookId));
+  };
+
+  const handelRemoveFromCart = async (bookId: string) => {
+    dispatch(await removeFromCart(bookId));
+  };
+
+  const removeAllFromCart = async (bookId: string) => {
+    for (let i = 0; i < quantity; i++) {
+      await dispatch(removeFromCart(bookId));
+    }
+  };
+
   return (
     <View style={styles.item}>
       <Image style={styles.img} source={{uri: book.image}} />
@@ -21,7 +42,7 @@ const CartItem: FC<Props> = ({book}) => {
             <Text style={styles.title}>{book.name}</Text>
             <Text style={styles.author}>By {book.author}</Text>
           </View>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={()=>{removeAllFromCart(book._id)}}>
             <SFSymbol
               style={[styles.icon, {backgroundColor: '#fff'}]}
               name={'multiply'}
@@ -35,11 +56,17 @@ const CartItem: FC<Props> = ({book}) => {
             <Text style={styles.ogPrice}> Rs. {book.price} </Text>
           </Text>
           <View style={styles.buttons}>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                handelRemoveFromCart(book._id);
+              }}>
               <SFSymbol style={styles.icon} name={'minus'} color={'#fff'} />
             </TouchableOpacity>
-            <Text style={styles.quantityText}>1</Text>
-            <TouchableOpacity>
+            <Text style={styles.quantityText}>{quantity}</Text>
+            <TouchableOpacity
+              onPress={() => {
+                handelAddToCart(book._id);
+              }}>
               <SFSymbol style={styles.icon} name={'plus'} color={'#fff'} />
             </TouchableOpacity>
           </View>
@@ -81,7 +108,7 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     paddingVertical: 5,
   },
-  titleContainer:{
+  titleContainer: {
     width: '80%',
   },
   title: {

@@ -1,9 +1,11 @@
 import React, {FC} from 'react';
-import {View, StyleSheet, TouchableOpacity, Image} from 'react-native';
+import {View, StyleSheet, TouchableOpacity, Image, Text} from 'react-native';
 import {SFSymbol} from 'react-native-sfsymbols';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {StackNavParamList} from '../navigation/types.ts';
+import {useSelector} from 'react-redux';
+import {RootState} from '../redux/store.ts';
 
 interface Props {
   screen: string;
@@ -12,6 +14,8 @@ interface Props {
 const Header: FC<Props> = ({screen}) => {
   const navigation =
     useNavigation<NativeStackNavigationProp<StackNavParamList>>();
+
+  const userState: any = useSelector((state: RootState) => state.auth);
   return (
     <View style={styles.header}>
       <TouchableOpacity
@@ -45,6 +49,9 @@ const Header: FC<Props> = ({screen}) => {
             name={screen === 'Cart' ? 'cart.fill' : 'cart'}
             color={'#A03037'}
           />
+          {userState.user.cart.length > 0 && (
+            <Text style={styles.cartBadge}>{userState.user.cart.length}</Text>
+          )}
         </TouchableOpacity>
       </View>
     </View>
@@ -85,6 +92,18 @@ const styles = StyleSheet.create({
     width: 25,
     height: 25,
     marginLeft: 10,
+  },
+  cartBadge: {
+    position: 'absolute',
+    top: -5,
+    right: -5,
+    backgroundColor: '#A03037',
+    color: '#fff',
+    borderRadius: 10,
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    fontSize: 12,
+    fontWeight: 'bold',
   },
 });
 

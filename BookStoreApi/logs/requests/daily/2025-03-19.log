@@ -1,0 +1,8 @@
+info: GET /api/v1/ 200 9 - 1.518 ms
+
+info: GET /apple-touch-icon-precomposed.png 404 47 - 0.534 ms
+
+info: GET /apple-touch-icon.png 404 47 - 0.127 ms
+
+info: GET /api/v1/users 200 65 - 80.980 ms
+

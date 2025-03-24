@@ -1,0 +1,751 @@
+error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js:37:5)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Module._compile (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:117:24)
+    at node:internal/modules/cjs/loader:1899:10
+    at Object.newLoader [as .js] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.runMain (node:internal/modules/run_main:151:5)
+    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/node/src/_babel-node.ts:159:12)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.<anonymous> (node:internal/modules/cjs/loader:1899:10)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)
+    at node:internal/main/run_main_module:33:47 {"date":"Wed Mar 19 2025 11:58:38 GMT+0530 (India Standard Time)","error":{"address":"::","code":"EADDRINUSE","errno":-48,"port":3000,"syscall":"listen"},"exception":true,"os":{"loadavg":[1.4384765625,1.79052734375,1.92431640625],"uptime":101899},"process":{"argv":["node","/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js"],"cwd":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi","execPath":"/opt/homebrew/Cellar/node/23.9.0/bin/node","gid":20,"memoryUsage":{"arrayBuffers":18329858,"external":22246170,"heapTotal":92471296,"heapUsed":55452864,"rss":147685376},"pid":40888,"uid":501,"version":"v23.9.0"},"stack":"Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1937:16)\n    at listenInCluster (node:net:1994:12)\n    at Server.listen (node:net:2099:7)\n    at Function.listen (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/application.js:635:24)\n    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js:37:5)\n    at Module._compile (node:internal/modules/cjs/loader:1734:14)\n    at Module._compile (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:117:24)\n    at node:internal/modules/cjs/loader:1899:10\n    at Object.newLoader [as .js] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:121:7)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.runMain (node:internal/modules/run_main:151:5)\n    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/node/src/_babel-node.ts:159:12)\n    at Module._compile (node:internal/modules/cjs/loader:1734:14)\n    at Object.<anonymous> (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47","timestamp":"2025-03-19T06:28:38.469Z","trace":[{"column":16,"file":"node:net","function":"Server.setupListenHandle [as _listen2]","line":1937,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"node:net","function":"listenInCluster","line":1994,"method":null,"native":false},{"column":7,"file":"node:net","function":"Server.listen","line":2099,"method":"listen","native":false},{"column":24,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/application.js","function":"Function.listen","line":635,"method":"listen","native":false},{"column":5,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js","function":null,"line":37,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1734,"method":"_compile","native":false},{"column":24,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js","function":"Module._compile","line":117,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1899,"method":null,"native":false},{"column":7,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js","function":"Object.newLoader [as .js]","line":121,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1469,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1286,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.runMain","line":151,"method":"runMain","native":false},{"column":12,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/node/src/_babel-node.ts","function":null,"line":159,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1734,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1899,"method":null,"native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1469,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1286,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":151,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":47,"file":"node:internal/main/run_main_module","function":null,"line":33,"method":null,"native":false}]}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-03-20T05:13:14.803Z"}
+error: 
+    status - 500 
+    message - Error: User with email samarthmistry311@gmail.com does not exist
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/build/services/user.service.js:73:17)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-20T05:14:51.053Z"}
+error: 
+    status - 500 
+    message - Error: User with email samarthmistry311@gmail.com already exist, try again!
+    at _callee5$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:37:11)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-20T05:20:53.590Z"}
+error: 
+    status - 500 
+    message - Error: User with email samarthmistry311@gmail.com already exist, try again!
+    at _callee5$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:37:11)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-20T05:23:43.129Z"}
+error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js:37:5)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Module._compile (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:117:24)
+    at node:internal/modules/cjs/loader:1899:10
+    at Object.newLoader [as .js] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.runMain (node:internal/modules/run_main:151:5)
+    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/node/src/_babel-node.ts:159:12)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.<anonymous> (node:internal/modules/cjs/loader:1899:10)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)
+    at node:internal/main/run_main_module:33:47 {"date":"Thu Mar 20 2025 11:41:42 GMT+0530 (India Standard Time)","error":{"address":"::","code":"EADDRINUSE","errno":-48,"port":3000,"syscall":"listen"},"exception":true,"os":{"loadavg":[2.46533203125,1.89111328125,1.9833984375],"uptime":187282},"process":{"argv":["node","/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js"],"cwd":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi","execPath":"/opt/homebrew/Cellar/node/23.9.0/bin/node","gid":20,"memoryUsage":{"arrayBuffers":18329858,"external":22246170,"heapTotal":94142464,"heapUsed":57915520,"rss":140263424},"pid":50545,"uid":501,"version":"v23.9.0"},"stack":"Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1937:16)\n    at listenInCluster (node:net:1994:12)\n    at Server.listen (node:net:2099:7)\n    at Function.listen (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/application.js:635:24)\n    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js:37:5)\n    at Module._compile (node:internal/modules/cjs/loader:1734:14)\n    at Module._compile (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:117:24)\n    at node:internal/modules/cjs/loader:1899:10\n    at Object.newLoader [as .js] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:121:7)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.runMain (node:internal/modules/run_main:151:5)\n    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/node/src/_babel-node.ts:159:12)\n    at Module._compile (node:internal/modules/cjs/loader:1734:14)\n    at Object.<anonymous> (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47","timestamp":"2025-03-20T06:11:42.749Z","trace":[{"column":16,"file":"node:net","function":"Server.setupListenHandle [as _listen2]","line":1937,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"node:net","function":"listenInCluster","line":1994,"method":null,"native":false},{"column":7,"file":"node:net","function":"Server.listen","line":2099,"method":"listen","native":false},{"column":24,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/application.js","function":"Function.listen","line":635,"method":"listen","native":false},{"column":5,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js","function":null,"line":37,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1734,"method":"_compile","native":false},{"column":24,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js","function":"Module._compile","line":117,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1899,"method":null,"native":false},{"column":7,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js","function":"Object.newLoader [as .js]","line":121,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1469,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1286,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.runMain","line":151,"method":"runMain","native":false},{"column":12,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/node/src/_babel-node.ts","function":null,"line":159,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1734,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1899,"method":null,"native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1469,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1286,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":151,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":47,"file":"node:internal/main/run_main_module","function":null,"line":33,"method":null,"native":false}]}
+error: 
+    status - 500 
+    message - TypeError: _jsonwebtoken.default.compare is not a function
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:34:29)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-20T07:58:38.158Z"}
+error: 
+    status - 500 
+    message - TypeError: _jsonwebtoken.default.compare is not a function
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:34:29)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-20T07:58:51.308Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users/ 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-03-20T08:03:30.324Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/jsonwebtoken/verify.js:53:17)
+    at _callee$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:22:32)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at userAuth (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at logger (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at jsonParser (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/types/json.js:113:7)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at urlencodedParser (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/types/urlencoded.js:94:7)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at internalNext (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/helmet/dist/index.js:142:6)
+    at xXssProtectionMiddleware (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/helmet/dist/middlewares/x-xss-protection/index.js:6:3)
+    at internalNext (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/helmet/dist/index.js:145:6)
+    at referrerPolicyMiddleware (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/helmet/dist/middlewares/referrer-policy/index.js:24:3)
+    at internalNext (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/helmet/dist/index.js:145:6)
+    at xPermittedCrossDomainPoliciesMiddleware (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/helmet/dist/middlewares/x-permitted-cross-domain-policies/index.js:15:3) 
+    url - /api/v1/users/ 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2025-03-20T08:05:12.529Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'userId')
+    at _callee2$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/controllers/book.controller.js:19:46)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at wishListBook (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/controllers/book.controller.js:17:26)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at logger (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:238:16)
+    at done (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:507:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21) 
+    url - /api/v1/books/wishlist 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:26:26.470Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/jsonwebtoken/verify.js:53:17)
+    at _callee$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:23:32)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at userAuth (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at logger (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:238:16)
+    at done (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:507:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21) 
+    url - /api/v1/books/wishlist 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:32:48.808Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/jsonwebtoken/verify.js:53:17)
+    at _callee$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:23:32)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at userAuth (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at logger (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:238:16)
+    at done (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:507:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21) 
+    url - /api/v1/books/wishlist 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:34:29.796Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/jsonwebtoken/verify.js:53:17)
+    at _callee$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:23:32)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at userAuth (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at logger (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:238:16)
+    at done (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:507:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21) 
+    url - /api/v1/books/wishlist 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:34:48.491Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/jsonwebtoken/verify.js:53:17)
+    at _callee$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:23:32)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at userAuth (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at logger (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:238:16)
+    at done (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:507:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21) 
+    url - /api/v1/users/67dba6420a2047b9b6f38d5b 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:36:11.413Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/jsonwebtoken/verify.js:53:17)
+    at _callee$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:23:32)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at userAuth (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at logger (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:238:16)
+    at done (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:507:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21) 
+    url - /api/v1/books/wishlist 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:40:21.767Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'userId')
+    at _callee2$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/controllers/book.controller.js:19:38)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at wishListBook (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/controllers/book.controller.js:17:26)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at _callee$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:27:5)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/wishlist 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:44:41.206Z"}
+error: 
+    status - 500 
+    message - Error: User with email samarthmistry311@gmail.com does not exist
+    at _callee2$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:14:11)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:49:01.775Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'quantity')
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:48:9)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/cart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T10:05:03.981Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'quantity')
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:48:9)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/cart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T10:09:08.732Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'quantity')
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:48:9)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/cart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T10:10:47.505Z"}
+error: 
+    status - 500 
+    message - Error: Item Not found in cart
+    at _callee4$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:67:15)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/removeFromCart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T10:21:38.004Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'quantity')
+    at _callee4$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:72:14)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/removeFromCart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T10:22:50.668Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'quantity')
+    at _callee4$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:70:14)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/removeFromCart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T10:23:12.808Z"}
+error: 
+    status - 500 
+    message - Error: Item Not found in cart
+    at _callee4$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:67:15)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/removeFromCart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T10:23:24.580Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/books/removeFromCart 
+      method - PUT 
+      IP - ::1
+     {"timestamp":"2025-03-22T04:07:22.737Z"}
+error: 
+    status - 500 
+    message - Error: Item Not found in cart
+    at _callee4$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:67:15)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/removeFromCart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-22T04:07:29.618Z"}
+error: 
+    status - 500 
+    message - Error: User with email samarthmistry311@gmail.com already exist, try again!
+    at _callee4$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:31:11)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-22T04:27:14.184Z"}
+error: 
+    status - 500 
+    message - ReferenceError: data is not defined
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:43:42)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-22T04:29:11.183Z"}
+error: 
+    status - 500 
+    message - Error: User with email samarth311@gmail.com already exists, try again!
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:30:11)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-22T04:29:19.752Z"}
+error: 
+    status - 500 
+    message - ReferenceError: data is not defined
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:43:42)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-22T04:30:06.293Z"}
+error: 
+    status - 500 
+    message - Error: Item Not found in cart
+    at _callee4$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:67:15)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/removeFromCart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-24T09:00:11.705Z"}

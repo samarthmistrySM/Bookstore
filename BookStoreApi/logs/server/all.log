@@ -1,0 +1,1097 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-19T06:27:54.349Z"}
+info: Connected to the database. {"timestamp":"2025-03-19T06:27:54.364Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-19T06:28:38.468Z"}
+info: Connected to the database. {"timestamp":"2025-03-19T06:28:38.476Z"}
+error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js:37:5)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Module._compile (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:117:24)
+    at node:internal/modules/cjs/loader:1899:10
+    at Object.newLoader [as .js] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.runMain (node:internal/modules/run_main:151:5)
+    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/node/src/_babel-node.ts:159:12)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.<anonymous> (node:internal/modules/cjs/loader:1899:10)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)
+    at node:internal/main/run_main_module:33:47 {"date":"Wed Mar 19 2025 11:58:38 GMT+0530 (India Standard Time)","error":{"address":"::","code":"EADDRINUSE","errno":-48,"port":3000,"syscall":"listen"},"exception":true,"os":{"loadavg":[1.4384765625,1.79052734375,1.92431640625],"uptime":101899},"process":{"argv":["node","/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js"],"cwd":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi","execPath":"/opt/homebrew/Cellar/node/23.9.0/bin/node","gid":20,"memoryUsage":{"arrayBuffers":18329858,"external":22246170,"heapTotal":92471296,"heapUsed":55452864,"rss":147685376},"pid":40888,"uid":501,"version":"v23.9.0"},"stack":"Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1937:16)\n    at listenInCluster (node:net:1994:12)\n    at Server.listen (node:net:2099:7)\n    at Function.listen (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/application.js:635:24)\n    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js:37:5)\n    at Module._compile (node:internal/modules/cjs/loader:1734:14)\n    at Module._compile (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:117:24)\n    at node:internal/modules/cjs/loader:1899:10\n    at Object.newLoader [as .js] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:121:7)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.runMain (node:internal/modules/run_main:151:5)\n    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/node/src/_babel-node.ts:159:12)\n    at Module._compile (node:internal/modules/cjs/loader:1734:14)\n    at Object.<anonymous> (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47","timestamp":"2025-03-19T06:28:38.469Z","trace":[{"column":16,"file":"node:net","function":"Server.setupListenHandle [as _listen2]","line":1937,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"node:net","function":"listenInCluster","line":1994,"method":null,"native":false},{"column":7,"file":"node:net","function":"Server.listen","line":2099,"method":"listen","native":false},{"column":24,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/application.js","function":"Function.listen","line":635,"method":"listen","native":false},{"column":5,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js","function":null,"line":37,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1734,"method":"_compile","native":false},{"column":24,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js","function":"Module._compile","line":117,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1899,"method":null,"native":false},{"column":7,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js","function":"Object.newLoader [as .js]","line":121,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1469,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1286,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.runMain","line":151,"method":"runMain","native":false},{"column":12,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/node/src/_babel-node.ts","function":null,"line":159,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1734,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1899,"method":null,"native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1469,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1286,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":151,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":47,"file":"node:internal/main/run_main_module","function":null,"line":33,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-19T06:28:50.420Z"}
+info: Connected to the database. {"timestamp":"2025-03-19T06:28:50.428Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-19T06:30:37.558Z"}
+info: Connected to the database. {"timestamp":"2025-03-19T06:30:37.566Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-19T06:31:11.018Z"}
+info: Connected to the database. {"timestamp":"2025-03-19T06:31:11.029Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-19T06:31:33.183Z"}
+info: Connected to the database. {"timestamp":"2025-03-19T06:31:33.191Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-19T07:51:06.359Z"}
+info: Connected to the database. {"timestamp":"2025-03-19T07:51:06.371Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:04:40.886Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:04:40.922Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-03-20T05:13:14.803Z"}
+error: 
+    status - 500 
+    message - Error: User with email samarthmistry311@gmail.com does not exist
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/build/services/user.service.js:73:17)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-20T05:14:51.053Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:20:42.578Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:20:42.585Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:20:47.168Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:20:47.176Z"}
+error: 
+    status - 500 
+    message - Error: User with email samarthmistry311@gmail.com already exist, try again!
+    at _callee5$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:37:11)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-20T05:20:53.590Z"}
+error: 
+    status - 500 
+    message - Error: User with email samarthmistry311@gmail.com already exist, try again!
+    at _callee5$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:37:11)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-20T05:23:43.129Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:24:51.459Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:24:51.467Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:25:08.400Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:25:08.408Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:25:28.002Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:25:28.011Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:25:59.080Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:25:59.087Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:26:14.633Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:26:14.642Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:26:36.379Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:26:36.387Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:26:49.351Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:26:49.359Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:26:58.187Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:26:58.229Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:27:37.265Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:27:37.274Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:27:49.923Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:27:49.937Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:28:00.821Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:28:00.829Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:28:11.353Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:28:11.363Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:29:22.046Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:29:22.054Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:29:23.280Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:29:23.288Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:29:31.618Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:29:31.626Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T05:45:11.158Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T05:45:11.171Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T06:11:21.360Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T06:11:21.373Z"}
+error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js:37:5)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Module._compile (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:117:24)
+    at node:internal/modules/cjs/loader:1899:10
+    at Object.newLoader [as .js] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.runMain (node:internal/modules/run_main:151:5)
+    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/node/src/_babel-node.ts:159:12)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.<anonymous> (node:internal/modules/cjs/loader:1899:10)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)
+    at node:internal/main/run_main_module:33:47 {"date":"Thu Mar 20 2025 11:41:42 GMT+0530 (India Standard Time)","error":{"address":"::","code":"EADDRINUSE","errno":-48,"port":3000,"syscall":"listen"},"exception":true,"os":{"loadavg":[2.46533203125,1.89111328125,1.9833984375],"uptime":187282},"process":{"argv":["node","/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js"],"cwd":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi","execPath":"/opt/homebrew/Cellar/node/23.9.0/bin/node","gid":20,"memoryUsage":{"arrayBuffers":18329858,"external":22246170,"heapTotal":94142464,"heapUsed":57915520,"rss":140263424},"pid":50545,"uid":501,"version":"v23.9.0"},"stack":"Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1937:16)\n    at listenInCluster (node:net:1994:12)\n    at Server.listen (node:net:2099:7)\n    at Function.listen (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/application.js:635:24)\n    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js:37:5)\n    at Module._compile (node:internal/modules/cjs/loader:1734:14)\n    at Module._compile (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:117:24)\n    at node:internal/modules/cjs/loader:1899:10\n    at Object.newLoader [as .js] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js:121:7)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.runMain (node:internal/modules/run_main:151:5)\n    at Object.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/node/src/_babel-node.ts:159:12)\n    at Module._compile (node:internal/modules/cjs/loader:1734:14)\n    at Object.<anonymous> (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47","timestamp":"2025-03-20T06:11:42.749Z","trace":[{"column":16,"file":"node:net","function":"Server.setupListenHandle [as _listen2]","line":1937,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"node:net","function":"listenInCluster","line":1994,"method":null,"native":false},{"column":7,"file":"node:net","function":"Server.listen","line":2099,"method":"listen","native":false},{"column":24,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/application.js","function":"Function.listen","line":635,"method":"listen","native":false},{"column":5,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/index.js","function":null,"line":37,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1734,"method":"_compile","native":false},{"column":24,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js","function":"Module._compile","line":117,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1899,"method":null,"native":false},{"column":7,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/pirates/lib/index.js","function":"Object.newLoader [as .js]","line":121,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1469,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1286,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.runMain","line":151,"method":"runMain","native":false},{"column":12,"file":"/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/node/src/_babel-node.ts","function":null,"line":159,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1734,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":null,"line":1899,"method":null,"native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1469,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1286,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":151,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":47,"file":"node:internal/main/run_main_module","function":null,"line":33,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T06:12:54.405Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T06:12:54.418Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T06:13:33.303Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T06:13:33.311Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T06:13:50.081Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T06:13:50.089Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T06:13:59.132Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T06:13:59.141Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T06:24:19.503Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T06:24:19.530Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T07:49:28.520Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T07:49:28.527Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T07:49:37.727Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T07:49:37.734Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T07:50:20.835Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T07:50:20.843Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T07:54:39.021Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T07:54:39.029Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T07:55:00.089Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T07:55:00.096Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T07:56:03.445Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T07:56:03.453Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T07:56:21.058Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T07:56:21.065Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T07:57:05.297Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T07:57:05.304Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T07:58:26.612Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T07:58:26.621Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T07:58:34.582Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T07:58:34.590Z"}
+error: 
+    status - 500 
+    message - TypeError: _jsonwebtoken.default.compare is not a function
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:34:29)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-20T07:58:38.158Z"}
+error: 
+    status - 500 
+    message - TypeError: _jsonwebtoken.default.compare is not a function
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:34:29)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-20T07:58:51.308Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T07:59:36.755Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T07:59:36.762Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T07:59:40.654Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T07:59:40.662Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:01:55.449Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:01:55.457Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/users/ 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2025-03-20T08:03:30.324Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/jsonwebtoken/verify.js:53:17)
+    at _callee$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:22:32)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at userAuth (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at logger (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at jsonParser (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/types/json.js:113:7)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at urlencodedParser (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/types/urlencoded.js:94:7)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at internalNext (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/helmet/dist/index.js:142:6)
+    at xXssProtectionMiddleware (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/helmet/dist/middlewares/x-xss-protection/index.js:6:3)
+    at internalNext (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/helmet/dist/index.js:145:6)
+    at referrerPolicyMiddleware (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/helmet/dist/middlewares/referrer-policy/index.js:24:3)
+    at internalNext (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/helmet/dist/index.js:145:6)
+    at xPermittedCrossDomainPoliciesMiddleware (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/helmet/dist/middlewares/x-permitted-cross-domain-policies/index.js:15:3) 
+    url - /api/v1/users/ 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2025-03-20T08:05:12.529Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:08:41.485Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:08:41.492Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:33:00.730Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:33:00.737Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:33:01.393Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:33:01.400Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:34:57.928Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:34:57.936Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:35:30.026Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:35:30.034Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:36:17.154Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:36:17.161Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:40:09.080Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:40:09.089Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:40:13.607Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:40:13.617Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:40:29.844Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:40:29.852Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:41:08.245Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:41:08.252Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:41:11.243Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:41:11.253Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:41:13.676Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:41:13.684Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:41:35.487Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:41:35.495Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:41:54.125Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:41:54.133Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:45:34.947Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:45:34.956Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:46:01.796Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:46:01.803Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:53:20.343Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:53:20.350Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T08:55:47.472Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T08:55:47.479Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:01:04.297Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:01:04.312Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:01:12.016Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:01:12.025Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:03:08.615Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:03:08.629Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:03:11.223Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:03:11.230Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:09:17.452Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:09:17.468Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:10:38.099Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:10:38.107Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:12:05.928Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:12:05.935Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:13:37.174Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:13:37.181Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:14:28.507Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:14:28.515Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:15:14.691Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:15:14.699Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:15:27.401Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:15:27.408Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:23:14.687Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:23:14.699Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:25:18.165Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:25:18.172Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'userId')
+    at _callee2$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/controllers/book.controller.js:19:46)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at wishListBook (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/controllers/book.controller.js:17:26)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at logger (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:238:16)
+    at done (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:507:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21) 
+    url - /api/v1/books/wishlist 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:26:26.470Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:27:18.002Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:27:18.010Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:27:57.425Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:27:57.433Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:28:48.357Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:28:48.365Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:29:12.547Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:29:12.555Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:29:30.938Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:29:30.947Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:29:40.368Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:29:40.376Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:30:41.926Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:30:41.933Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:31:20.998Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:31:21.007Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:31:33.875Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:31:33.883Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:31:51.495Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:31:51.503Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:31:56.892Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:31:56.901Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:32:45.920Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:32:45.928Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/jsonwebtoken/verify.js:53:17)
+    at _callee$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:23:32)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at userAuth (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at logger (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:238:16)
+    at done (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:507:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21) 
+    url - /api/v1/books/wishlist 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:32:48.808Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/jsonwebtoken/verify.js:53:17)
+    at _callee$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:23:32)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at userAuth (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at logger (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:238:16)
+    at done (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:507:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21) 
+    url - /api/v1/books/wishlist 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:34:29.796Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/jsonwebtoken/verify.js:53:17)
+    at _callee$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:23:32)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at userAuth (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at logger (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:238:16)
+    at done (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:507:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21) 
+    url - /api/v1/books/wishlist 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:34:48.491Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/jsonwebtoken/verify.js:53:17)
+    at _callee$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:23:32)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at userAuth (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at logger (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:238:16)
+    at done (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:507:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21) 
+    url - /api/v1/users/67dba6420a2047b9b6f38d5b 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:36:11.413Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/jsonwebtoken/verify.js:53:17)
+    at _callee$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:23:32)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at userAuth (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at logger (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:328:13)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/index.js:280:10)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:238:16)
+    at done (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:507:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21) 
+    url - /api/v1/books/wishlist 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:40:21.767Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:41:19.532Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:41:19.544Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:41:37.169Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:41:37.176Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:41:54.285Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:41:54.293Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:42:15.809Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:42:15.849Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:42:33.911Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:42:33.919Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:42:47.116Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:42:47.123Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:43:21.571Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:43:21.578Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:43:50.766Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:43:50.774Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:43:51.720Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:43:51.728Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:43:52.725Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:43:52.733Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:44:08.821Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:44:08.828Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:44:29.951Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:44:29.959Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:44:40.691Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:44:40.699Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'userId')
+    at _callee2$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/controllers/book.controller.js:19:38)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at /Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+    at new Promise (<anonymous>)
+    at apply (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+    at wishListBook (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/controllers/book.controller.js:17:26)
+    at Layer.handle [as handle_request] (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/express/lib/router/route.js:149:13)
+    at _callee$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/middlewares/auth.middleware.js:27:5)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/wishlist 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:44:41.206Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:44:51.009Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:44:51.017Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:45:00.734Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:45:00.742Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:46:15.838Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:46:15.846Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:46:38.223Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:46:38.232Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:47:30.469Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:47:30.477Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:47:51.761Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:47:51.769Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:48:02.105Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:48:02.115Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:48:20.504Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:48:20.512Z"}
+error: 
+    status - 500 
+    message - Error: User with email samarthmistry311@gmail.com does not exist
+    at _callee2$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:14:11)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-20T09:49:01.775Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:49:36.094Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:49:36.103Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:52:43.418Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:52:43.427Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:52:44.500Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:52:44.507Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:53:47.216Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:53:47.224Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:54:10.792Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:54:10.800Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:54:22.401Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:54:22.408Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:54:52.154Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:54:52.162Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:56:18.312Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:56:18.321Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:56:34.377Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:56:34.384Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:57:09.928Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:57:10.041Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:58:06.455Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:58:06.464Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:58:39.633Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:58:39.641Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T09:59:34.555Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T09:59:34.565Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:00:07.725Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:00:07.734Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:00:41.842Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:00:41.850Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:01:24.988Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:01:24.996Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:01:35.817Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:01:35.828Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:01:44.391Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:01:44.399Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:01:51.755Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:01:51.768Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:05:01.002Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:05:01.011Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'quantity')
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:48:9)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/cart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T10:05:03.981Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:05:55.547Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:05:55.555Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:06:06.783Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:06:06.792Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:08:28.727Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:08:28.736Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:09:07.000Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:09:07.009Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'quantity')
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:48:9)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/cart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T10:09:08.732Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:09:24.973Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:09:24.982Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:09:45.339Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:09:45.348Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:10:15.299Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:10:15.307Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'quantity')
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:48:9)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/cart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T10:10:47.505Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:11:01.313Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:11:01.321Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:12:58.072Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:12:58.084Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:13:12.519Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:13:12.528Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:16:16.311Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:16:16.360Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:17:07.459Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:17:07.467Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:17:16.432Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:17:16.440Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:17:31.373Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:17:31.382Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:18:11.905Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:18:11.912Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:18:23.156Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:18:23.164Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:18:30.484Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:18:30.491Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:18:47.980Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:18:47.987Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:20:32.424Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:20:32.433Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:20:34.044Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:20:34.054Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:21:18.628Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:21:18.636Z"}
+error: 
+    status - 500 
+    message - Error: Item Not found in cart
+    at _callee4$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:67:15)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/removeFromCart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T10:21:38.004Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:22:29.963Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:22:29.971Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'quantity')
+    at _callee4$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:72:14)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/removeFromCart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T10:22:50.668Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:23:12.191Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:23:12.199Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'quantity')
+    at _callee4$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:70:14)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/removeFromCart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T10:23:12.808Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-20T10:23:24.012Z"}
+info: Connected to the database. {"timestamp":"2025-03-20T10:23:24.020Z"}
+error: 
+    status - 500 
+    message - Error: Item Not found in cart
+    at _callee4$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:67:15)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/removeFromCart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-20T10:23:24.580Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-22T04:04:49.960Z"}
+info: Connected to the database. {"timestamp":"2025-03-22T04:04:50.449Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/books/removeFromCart 
+      method - PUT 
+      IP - ::1
+     {"timestamp":"2025-03-22T04:07:22.737Z"}
+error: 
+    status - 500 
+    message - Error: Item Not found in cart
+    at _callee4$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:67:15)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/removeFromCart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-22T04:07:29.618Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-22T04:07:57.750Z"}
+info: Connected to the database. {"timestamp":"2025-03-22T04:07:57.790Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-22T04:25:23.204Z"}
+info: Connected to the database. {"timestamp":"2025-03-22T04:25:23.215Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-22T04:25:40.520Z"}
+info: Connected to the database. {"timestamp":"2025-03-22T04:25:40.527Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-22T04:26:11.908Z"}
+info: Connected to the database. {"timestamp":"2025-03-22T04:26:11.920Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-22T04:26:50.458Z"}
+info: Connected to the database. {"timestamp":"2025-03-22T04:26:50.465Z"}
+error: 
+    status - 500 
+    message - Error: User with email samarthmistry311@gmail.com already exist, try again!
+    at _callee4$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:31:11)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-22T04:27:14.184Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-22T04:28:27.615Z"}
+info: Connected to the database. {"timestamp":"2025-03-22T04:28:27.631Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-22T04:28:42.882Z"}
+info: Connected to the database. {"timestamp":"2025-03-22T04:28:42.890Z"}
+error: 
+    status - 500 
+    message - ReferenceError: data is not defined
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:43:42)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-22T04:29:11.183Z"}
+error: 
+    status - 500 
+    message - Error: User with email samarth311@gmail.com already exists, try again!
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:30:11)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-22T04:29:19.752Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-22T04:29:49.547Z"}
+info: Connected to the database. {"timestamp":"2025-03-22T04:29:49.568Z"}
+error: 
+    status - 500 
+    message - ReferenceError: data is not defined
+    at _callee3$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/user.service.js:43:42)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/users/register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2025-03-22T04:30:06.293Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-22T04:31:31.685Z"}
+info: Connected to the database. {"timestamp":"2025-03-22T04:31:31.698Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-22T04:40:09.085Z"}
+info: Connected to the database. {"timestamp":"2025-03-22T04:40:09.098Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-22T04:40:41.483Z"}
+info: Connected to the database. {"timestamp":"2025-03-22T04:40:41.490Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-22T07:52:55.495Z"}
+info: Connected to the database. {"timestamp":"2025-03-22T07:52:55.520Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-22T09:03:45.331Z"}
+info: Connected to the database. {"timestamp":"2025-03-22T09:03:45.341Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-24T03:53:22.732Z"}
+info: Connected to the database. {"timestamp":"2025-03-24T03:53:22.748Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-24T04:10:09.849Z"}
+info: Connected to the database. {"timestamp":"2025-03-24T04:10:09.863Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-24T05:48:19.495Z"}
+info: Connected to the database. {"timestamp":"2025-03-24T05:48:19.504Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-24T05:48:27.941Z"}
+info: Connected to the database. {"timestamp":"2025-03-24T05:48:27.949Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-24T05:49:11.306Z"}
+info: Connected to the database. {"timestamp":"2025-03-24T05:49:11.315Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2025-03-24T05:49:31.027Z"}
+info: Connected to the database. {"timestamp":"2025-03-24T05:49:31.035Z"}
+error: 
+    status - 500 
+    message - Error: Item Not found in cart
+    at _callee4$ (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/src/services/book.service.js:67:15)
+    at tryCatch (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+    at _next (/Users/samarthmistry/Desktop/Codes/React_navtive/BookStore/BookStoreApi/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) 
+    url - /api/v1/books/removeFromCart 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2025-03-24T09:00:11.705Z"}

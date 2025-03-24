@@ -49,7 +49,7 @@ const Search = () => {
           <View style={styles.history}>
             <Text style={styles.label}>Recently Searched</Text>
             {history.map((item, index) => (
-              <TouchableOpacity key={index} style={styles.btn}>
+              <TouchableOpacity key={index} style={styles.btn} onPress={()=>{navigation.navigate('Result', {searchParam: item});}}>
                 <Text style={styles.btnText}>{item}</Text>
               </TouchableOpacity>
             ))}

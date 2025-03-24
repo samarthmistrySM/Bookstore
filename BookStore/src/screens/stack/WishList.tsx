@@ -7,17 +7,19 @@ import {
   Text,
   TouchableOpacity,
 } from 'react-native';
-import books from '../../mock/data.json';
 import Card from '../../components/Card.tsx';
 import Header from '../../components/Header.tsx';
 import {Book} from '../../types.ts';
 import BookModal from '../../components/BookModal.tsx';
 import {SFSymbol} from 'react-native-sfsymbols';
 import {useNavigation} from '@react-navigation/native';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../redux/store.ts';
 
 const Wishlist = () => {
   const [isBookModalOpen, setIsBookModalOpen] = useState(false);
   const [selectedBook, setSelectedBook] = useState<Book | null>(null);
+  const {user}: {user: any} = useSelector((state: RootState) => state.auth);
   const navigation = useNavigation();
   const selectBook = (book: Book) => {
     setSelectedBook(book);
@@ -31,19 +33,24 @@ const Wishlist = () => {
   return (
     <SafeAreaView style={styles.container}>
       <Header screen={'Wishlist'} />
-        <View style={styles.titleContainer}>
-          <TouchableOpacity onPress={() => navigation.goBack()}>
-            <SFSymbol name={'arrow.left'} style={styles.icon} color={'#000'} />
-          </TouchableOpacity>
-          <Text style={styles.title}>
-            Wishlist{' '}
-            <Text style={styles.booksCount}> ({books.length} Items)</Text>
-          </Text>
-        </View>
+      <View style={styles.titleContainer}>
+        <TouchableOpacity onPress={() => navigation.goBack()}>
+          <SFSymbol name={'arrow.left'} style={styles.icon} color={'#000'} />
+        </TouchableOpacity>
+        <Text style={styles.title}>
+          Wishlist{' '}
+          <Text style={styles.booksCount}> ({user.wishList.length} Items)</Text>
+        </Text>
+      </View>
       <ScrollView>
         <View style={styles.booksContainer}>
-          {books.map((book: Book, index: number) => (
-            <Card key={index} book={book} selectBook={selectBook} wishlisted={true} />
+          {user.wishList.map((book: Book, index: number) => (
+            <Card
+              key={index}
+              book={book}
+              selectBook={selectBook}
+              wishlisted={true}
+            />
           ))}
         </View>
         <Text style={styles.footer}>

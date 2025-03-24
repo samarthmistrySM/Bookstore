@@ -11,11 +11,13 @@ import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {StackNavParamList} from '../../navigation/types.ts';
 import Header from '../../components/Header.tsx';
 import {SFSymbol} from 'react-native-sfsymbols';
-import books from '../../mock/data.json';
 import Card from '../../components/Card.tsx';
-import {Book} from '../../types.ts';
 import {useNavigation} from '@react-navigation/native';
 import BookModal from '../../components/BookModal.tsx';
+import {useDispatch, useSelector} from 'react-redux';
+import {AppDispatch, RootState} from '../../redux/store.ts';
+import {fetchBooks} from '../../redux/slices/dataSlice.ts';
+import {Book} from '../../types.ts';
 
 type Props = NativeStackScreenProps<StackNavParamList, 'Result'>;
 
@@ -36,8 +38,12 @@ const Result: FC<Props> = ({route}) => {
     setSelectedBook(null);
   };
 
+  const bookState: any = useSelector((state: RootState) => state.data);
+
   useEffect(() => {
-    const filtered = books.filter(book => book.name.includes(searchParam));
+    const filtered = bookState.books.filter((book: Book) =>
+      book.name.toLowerCase().includes(searchParam.toLowerCase()),
+    );
     setFilteredBooks(filtered);
   }, [searchParam]);
 
