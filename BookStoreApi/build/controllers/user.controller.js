@@ -5,11 +5,12 @@ var _typeof = require("@babel/runtime/helpers/typeof");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.registerUser = exports.loginUser = exports.getUser = void 0;
+exports.registerUser = exports.loginUser = exports.googleLogin = exports.getUser = void 0;
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/asyncToGenerator"));
 var _httpStatusCodes = _interopRequireDefault(require("http-status-codes"));
-var UserService = _interopRequireWildcard(require("../services/user.service"));
+var _user = _interopRequireWildcard(require("../services/user.service"));
+var UserService = _user;
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { "default": e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n["default"] = e, t && t.set(e, n), n; }
 var getUser = exports.getUser = /*#__PURE__*/function () {
@@ -87,25 +88,56 @@ var registerUser = exports.registerUser = /*#__PURE__*/function () {
           return UserService.register(req.body);
         case 3:
           token = _context3.sent;
-          console.log(token);
           res.status(_httpStatusCodes["default"].CREATED).json({
             code: _httpStatusCodes["default"].CREATED,
             data: token,
             message: 'User register successfully'
           });
-          _context3.next = 11;
+          _context3.next = 10;
           break;
-        case 8:
-          _context3.prev = 8;
+        case 7:
+          _context3.prev = 7;
           _context3.t0 = _context3["catch"](0);
           next(_context3.t0);
-        case 11:
+        case 10:
         case "end":
           return _context3.stop();
       }
-    }, _callee3, null, [[0, 8]]);
+    }, _callee3, null, [[0, 7]]);
   }));
   return function registerUser(_x7, _x8, _x9) {
     return _ref3.apply(this, arguments);
+  };
+}();
+var googleLogin = exports.googleLogin = /*#__PURE__*/function () {
+  var _ref4 = (0, _asyncToGenerator2["default"])(/*#__PURE__*/_regenerator["default"].mark(function _callee4(req, res, next) {
+    var token;
+    return _regenerator["default"].wrap(function _callee4$(_context4) {
+      while (1) switch (_context4.prev = _context4.next) {
+        case 0:
+          _context4.prev = 0;
+          _context4.next = 3;
+          return UserService.googleSignIn(req.body);
+        case 3:
+          token = _context4.sent;
+          res.status(_httpStatusCodes["default"].CREATED).json({
+            code: _httpStatusCodes["default"].CREATED,
+            data: token,
+            message: 'Google Authentication Successfully'
+          });
+          _context4.next = 10;
+          break;
+        case 7:
+          _context4.prev = 7;
+          _context4.t0 = _context4["catch"](0);
+          next(_context4.t0);
+        case 10:
+        case "end":
+          return _context4.stop();
+      }
+    }, _callee4, null, [[0, 7]]);
+  }));
+  return function googleLogin(_x10, _x11, _x12) {
+    return _ref4.apply(this, arguments);
   };
 }();

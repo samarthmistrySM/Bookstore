@@ -10,4 +10,6 @@ router.post('/login', userController.loginUser);
 
 router.post('/register', userController.registerUser);
 
+router.post('/google-login',userController.googleLogin)
+
 export default router;

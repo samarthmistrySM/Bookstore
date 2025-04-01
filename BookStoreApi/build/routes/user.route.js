@@ -15,4 +15,5 @@ var router = _express["default"].Router();
 router.get('/', _auth.userAuth, userController.getUser);
 router.post('/login', userController.loginUser);
 router.post('/register', userController.registerUser);
+router.post('/google-login', userController.googleLogin);
 var _default = exports["default"] = router;

@@ -10,7 +10,11 @@ import {
   ScrollView,
 } from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
-import {loginUser, registerUser} from '../../redux/slices/authSlice.ts';
+import {
+  loginUser,
+  loginWithGoogle,
+  registerUser,
+} from '../../redux/slices/authSlice.ts';
 import {AppDispatch, RootState} from '../../redux/store.ts';
 
 const Login = () => {
@@ -27,18 +31,22 @@ const Login = () => {
 
   const handleLogin = async () => {
     console.log('login');
-    dispatch(await loginUser({email:email.toLowerCase(), password}));
+    dispatch(await loginUser({email: email.toLowerCase(), password}));
   };
 
   const handleRegister = async () => {
     dispatch(
       await registerUser({
-        email:email.toLowerCase(),
+        email: email.toLowerCase(),
         password,
         phoneNumber: parseInt(phoneNumber, 10),
         fullName,
       }),
     );
+  };
+
+  const handleGoogleLogin = async () => {
+    dispatch(await loginWithGoogle());
   };
 
   return (
@@ -119,7 +127,10 @@ const Login = () => {
             )}
           </View>
 
-          <TouchableOpacity disabled={loading} style={[styles.authButton, loading && {backgroundColor: '#A03037'}]} onPress={()=> isLogin ? handleLogin() : handleRegister()}>
+          <TouchableOpacity
+            disabled={loading}
+            style={[styles.authButton, loading && {backgroundColor: '#A03037'}]}
+            onPress={() => (isLogin ? handleLogin() : handleRegister())}>
             <Text style={styles.authButtonText}>
               {isLogin ? 'Login' : 'Signup'}
             </Text>
@@ -133,11 +144,7 @@ const Login = () => {
                 <View style={styles.line} />
               </View>
               <View style={styles.socialButtons}>
-                <TouchableOpacity
-                  style={[styles.socialBtn, styles.facebookBtn]}>
-                  <Text style={styles.btnText}>Facebook</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={[styles.socialBtn, styles.googleBtn]}>
+                <TouchableOpacity style={[styles.socialBtn, styles.googleBtn]} onPress={()=>handleGoogleLogin()}>
                   <Text style={[styles.btnText, {color: '#333'}]}>Google</Text>
                 </TouchableOpacity>
               </View>
@@ -278,7 +285,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     borderRadius: 8,
     alignItems: 'center',
-    width: '48%',
+    width: '100%',
   },
   facebookBtn: {
     backgroundColor: '#1877F2',

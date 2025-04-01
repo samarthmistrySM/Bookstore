@@ -10,9 +10,6 @@ var _user = _interopRequireDefault(require("./user.route"));
 var _book = _interopRequireDefault(require("./book.route"));
 var router = _express["default"].Router();
 var routes = function routes() {
-  router.get('/', function (req, res) {
-    res.json('Welcome');
-  });
   router.use('/users', _user["default"]);
   router.use('/books', _book["default"]);
   return router;

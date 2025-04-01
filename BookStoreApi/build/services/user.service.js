@@ -4,12 +4,15 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.register = exports.login = exports.getUser = void 0;
+exports.register = exports.login = exports.googleSignIn = exports.getUser = void 0;
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/asyncToGenerator"));
 var _user = _interopRequireDefault(require("../models/user.model"));
 var _bcrypt = _interopRequireDefault(require("bcrypt"));
 var _jsonwebtoken = _interopRequireDefault(require("jsonwebtoken"));
+var _require = require('google-auth-library'),
+  OAuth2Client = _require.OAuth2Client;
+var client = new OAuth2Client('114689921260-5htdpd4j9sep13v3lkk21ob171739ra2.apps.googleusercontent.com');
 var getUser = exports.getUser = /*#__PURE__*/function () {
   var _ref = (0, _asyncToGenerator2["default"])(/*#__PURE__*/_regenerator["default"].mark(function _callee(id) {
     var data;
@@ -17,7 +20,7 @@ var getUser = exports.getUser = /*#__PURE__*/function () {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return _user["default"].findById(id);
+          return _user["default"].findById(id).populate('wishList').populate('cart.book');
         case 2:
           data = _context.sent;
           return _context.abrupt("return", data);
@@ -126,5 +129,66 @@ var register = exports.register = /*#__PURE__*/function () {
   }));
   return function register(_x3) {
     return _ref3.apply(this, arguments);
+  };
+}();
+var googleSignIn = exports.googleSignIn = /*#__PURE__*/function () {
+  var _ref4 = (0, _asyncToGenerator2["default"])(/*#__PURE__*/_regenerator["default"].mark(function _callee4(body) {
+    var userData, email, name, user, salt, hashedPassword, jwtToken;
+    return _regenerator["default"].wrap(function _callee4$(_context4) {
+      while (1) switch (_context4.prev = _context4.next) {
+        case 0:
+          userData = body.userData;
+          if (userData) {
+            _context4.next = 3;
+            break;
+          }
+          throw new Error('Google data is required');
+        case 3:
+          email = userData.email, name = userData.name;
+          _context4.next = 6;
+          return _user["default"].findOne({
+            email: email
+          });
+        case 6:
+          user = _context4.sent;
+          if (user) {
+            _context4.next = 17;
+            break;
+          }
+          _context4.next = 10;
+          return _bcrypt["default"].genSalt(10);
+        case 10:
+          salt = _context4.sent;
+          _context4.next = 13;
+          return _bcrypt["default"].hash("Bookstore@123", salt);
+        case 13:
+          hashedPassword = _context4.sent;
+          _context4.next = 16;
+          return _user["default"].create({
+            email: email,
+            fullName: name,
+            password: hashedPassword
+          });
+        case 16:
+          user = _context4.sent;
+        case 17:
+          jwtToken = _jsonwebtoken["default"].sign({
+            userId: user._id
+          }, process.env.JWT_SECRET);
+          if (jwtToken) {
+            _context4.next = 20;
+            break;
+          }
+          throw new Error("Google Authentication Failed");
+        case 20:
+          return _context4.abrupt("return", jwtToken);
+        case 21:
+        case "end":
+          return _context4.stop();
+      }
+    }, _callee4);
+  }));
+  return function googleSignIn(_x4) {
+    return _ref4.apply(this, arguments);
   };
 }();

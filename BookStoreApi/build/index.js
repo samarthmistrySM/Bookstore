@@ -17,6 +17,8 @@ var _logger = _interopRequireWildcard(require("./config/logger"));
 var _morgan = _interopRequireDefault(require("morgan"));
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { "default": e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n["default"] = e, t && t.set(e, n), n; }
+var swaggerUi = require('swagger-ui-express');
+var swaggerDocument = require('./swagger-output.json');
 _dotenv["default"].config();
 var app = (0, _express["default"])();
 var host = process.env.APP_HOST;
@@ -33,6 +35,7 @@ app.use((0, _morgan["default"])('tiny', {
 }));
 (0, _database["default"])();
 app.use("/api/".concat(api_version), (0, _routes["default"])());
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(_error.appErrorHandler);
 app.use(_error.genericErrorHandler);
 app.use(_error.notFound);

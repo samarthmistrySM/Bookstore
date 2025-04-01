@@ -1,11 +1,19 @@
 import React, {FC} from 'react';
-import {View, StyleSheet, TouchableOpacity, Image, Text} from 'react-native';
+import {
+  View,
+  StyleSheet,
+  TouchableOpacity,
+  Image,
+  Text,
+  Alert,
+} from 'react-native';
 import {SFSymbol} from 'react-native-sfsymbols';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {StackNavParamList} from '../navigation/types.ts';
-import {useSelector} from 'react-redux';
-import {RootState} from '../redux/store.ts';
+import {useSelector, useDispatch} from 'react-redux';
+import {AppDispatch, RootState} from '../redux/store';
+import {logout} from '../redux/slices/authSlice.ts';
 
 interface Props {
   screen: string;
@@ -14,8 +22,26 @@ interface Props {
 const Header: FC<Props> = ({screen}) => {
   const navigation =
     useNavigation<NativeStackNavigationProp<StackNavParamList>>();
+  const dispatch = useDispatch<AppDispatch>();
 
   const userState: any = useSelector((state: RootState) => state.auth);
+  const handleLogout = () => {
+    Alert.alert(
+      'Confirm!',
+      'Are you sure you want to logout?',
+      [
+        {
+          text: 'Cancel',
+          style: 'cancel',
+        },
+        {
+          text: 'Logout',
+          onPress: () => dispatch(logout()),
+        },
+      ],
+      {cancelable: true},
+    );
+  };
   return (
     <View style={styles.header}>
       <TouchableOpacity
@@ -52,6 +78,13 @@ const Header: FC<Props> = ({screen}) => {
           {userState.user.cart.length > 0 && (
             <Text style={styles.cartBadge}>{userState.user.cart.length}</Text>
           )}
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => handleLogout()}>
+          <SFSymbol
+            style={styles.icon}
+            name={'rectangle.portrait.and.arrow.right.fill'}
+            color={'#A03037'}
+          />
         </TouchableOpacity>
       </View>
     </View>

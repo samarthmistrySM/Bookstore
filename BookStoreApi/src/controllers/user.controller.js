@@ -1,5 +1,6 @@
 import HttpStatus from 'http-status-codes';
 import * as UserService from '../services/user.service';
+import {googleSignIn} from "../services/user.service";
 
 export const getUser = async (req, res, next) => {
   try {
@@ -30,11 +31,24 @@ export const loginUser = async (req, res, next) => {
 export const registerUser = async (req, res, next) => {
   try {
     const token = await UserService.register(req.body);
-    console.log(token)
     res.status(HttpStatus.CREATED).json({
       code: HttpStatus.CREATED,
       data: token,
       message: 'User register successfully'
+    })
+  } catch (error) {
+    next(error);
+  }
+}
+
+export const googleLogin = async (req, res, next) => {
+  try {
+    const token = await UserService.googleSignIn(req.body);
+
+    res.status(HttpStatus.CREATED).json({
+      code: HttpStatus.CREATED,
+      data: token,
+      message: 'Google Authentication Successfully'
     })
   } catch (error) {
     next(error);

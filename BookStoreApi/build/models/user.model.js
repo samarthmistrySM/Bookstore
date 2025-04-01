@@ -17,7 +17,8 @@ var userSchema = new _mongoose.Schema({
   },
   phoneNumber: {
     type: Number,
-    required: true
+    required: true,
+    "default": 1234567890
   },
   password: {
     type: String,

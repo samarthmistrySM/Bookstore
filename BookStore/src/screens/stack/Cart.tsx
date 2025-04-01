@@ -130,7 +130,9 @@ const Cart = () => {
         </View>
         <TouchableOpacity
           style={styles.Btn}
-          onPress={() => navigation.navigate('Closure')}>
+          onPress={() => navigation.navigate('Closure')}
+          disabled={userState.user.cart.length === 0}
+        >
           <Text style={styles.btnText}>Place Order</Text>
         </TouchableOpacity>
         <UserDetailsModal
@@ -180,7 +182,7 @@ const styles = StyleSheet.create({
   alertContainer: {
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 20,
+    marginVertical: 50,
   },
   alertText: {
     fontSize: 18,

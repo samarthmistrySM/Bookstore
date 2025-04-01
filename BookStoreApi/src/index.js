@@ -2,6 +2,8 @@ import dotenv from 'dotenv';
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger-output.json');
 
 import routes from './routes';
 import database from './config/database';
@@ -27,8 +29,8 @@ app.use(express.json());
 app.use(morgan('tiny', { stream: logStream }));
 
 database();
-
 app.use(`/api/${api_version}`, routes());
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(appErrorHandler);
 app.use(genericErrorHandler);
 app.use(notFound);
