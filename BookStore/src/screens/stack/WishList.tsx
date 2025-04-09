@@ -42,21 +42,24 @@ const Wishlist = () => {
           <Text style={styles.booksCount}> ({user.wishList.length} Items)</Text>
         </Text>
       </View>
-      <ScrollView>
-        <View style={styles.booksContainer}>
-          {user.wishList.map((book: Book, index: number) => (
-            <Card
-              key={index}
-              book={book}
-              selectBook={selectBook}
-              wishlisted={true}
-            />
-          ))}
-        </View>
+      <View style={styles.content}>
+        <ScrollView contentContainerStyle={styles.scrollContent}>
+          <View style={styles.booksContainer}>
+            {user.wishList.map((book: Book, index: number) => (
+              <Card
+                key={index}
+                book={book}
+                selectBook={selectBook}
+                wishlisted={true}
+              />
+            ))}
+          </View>
+        </ScrollView>
         <Text style={styles.footer}>
           Copyright &copy; 2020, Bookstore private Limited. All Rights Reserved{' '}
         </Text>
-      </ScrollView>
+      </View>
+
       <BookModal
         isModalOpen={isBookModalOpen}
         handleModalClose={handleModalClose}
@@ -101,6 +104,14 @@ const styles = StyleSheet.create({
     width: 25,
     height: 25,
     marginLeft: 10,
+  },
+  content: {
+    flex: 1,
+    justifyContent: 'space-between',
+  },
+
+  scrollContent: {
+    flexGrow: 1,
   },
 });
 

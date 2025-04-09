@@ -1,0 +1,8 @@
+info: GET /api/v1/users 304 - - 332.275 ms
+
+info: GET /api/v1/users 304 - - 6.821 ms
+
+info: GET /api/v1/books 304 - - 87.569 ms
+
+info: GET /api/v1/users 304 - - 4.881 ms
+

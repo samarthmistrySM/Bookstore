@@ -1,0 +1,28 @@
+info: GET /api/v1/users 304 - - 367.289 ms
+
+info: GET /api/v1/users 304 - - 102.947 ms
+
+info: GET /api/v1/books 304 - - 190.189 ms
+
+info: GET /api/v1/users 304 - - 4.160 ms
+
+info: POST /api/v1/users/google-login 201 222 - 32.869 ms
+
+info: GET /api/v1/users 304 - - 4.374 ms
+
+info: GET /api/v1/users 304 - - 3.259 ms
+
+info: GET /api/v1/books 304 - - 12.658 ms
+
+info: GET /api/v1/users 304 - - 4.836 ms
+
+info: POST /api/v1/users/google-login 201 222 - 53.061 ms
+
+info: GET /api/v1/users 304 - - 4.921 ms
+
+info: GET /api/v1/users 304 - - 1.421 ms
+
+info: GET /api/v1/books 304 - - 7.170 ms
+
+info: GET /api/v1/users 304 - - 3.115 ms
+

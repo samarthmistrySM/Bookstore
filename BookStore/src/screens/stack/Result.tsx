@@ -50,30 +50,33 @@ const Result: FC<Props> = ({route}) => {
   return (
     <SafeAreaView style={styles.container}>
       <Header screen={'Result'} />
-      <ScrollView>
-        <View style={styles.titleContainer}>
-          <TouchableOpacity onPress={() => navigation.goBack()}>
-            <SFSymbol name={'arrow.left'} style={styles.icon} color={'#000'} />
-          </TouchableOpacity>
-          <Text style={styles.title}>
-            Showing result for{' '}
-            <Text style={styles.highlight}>{searchParam}</Text>
-          </Text>
-        </View>
-        <View style={styles.booksContainer}>
-          {filteredBooks.map((book: Book, index: number) => (
-            <Card
-              key={index}
-              book={book}
-              selectBook={selectBook}
-              wishlisted={false}
-            />
-          ))}
-        </View>
+      <View style={styles.content}>
+        <ScrollView contentContainerStyle={styles.scrollContent}>
+          <View style={styles.titleContainer}>
+            <TouchableOpacity onPress={() => navigation.goBack()}>
+              <SFSymbol name={'arrow.left'} style={styles.icon} color={'#000'} />
+            </TouchableOpacity>
+            <Text style={styles.title}>
+              Showing result for{' '}
+              <Text style={styles.highlight}>{searchParam}</Text>
+            </Text>
+          </View>
+          <View style={styles.booksContainer}>
+            {filteredBooks.map((book: Book, index: number) => (
+                <Card
+                    key={index}
+                    book={book}
+                    selectBook={selectBook}
+                    wishlisted={false}
+                />
+            ))}
+          </View>
+        </ScrollView>
         <Text style={styles.footer}>
           Copyright &copy; 2020, Bookstore private Limited. All Rights Reserved{' '}
         </Text>
-      </ScrollView>
+      </View>
+
       <BookModal
         isModalOpen={isBookModalOpen}
         handleModalClose={handleModalClose}
@@ -101,7 +104,6 @@ const styles = StyleSheet.create({
   title: {
     paddingVertical: 10,
     fontSize: 17,
-    paddingHorizontal: 10,
     color: '#999',
   },
   highlight: {
@@ -123,4 +125,13 @@ const styles = StyleSheet.create({
     height: 25,
     marginLeft: 10,
   },
+  content: {
+    flex: 1,
+    justifyContent: 'space-between',
+  },
+
+  scrollContent: {
+    flexGrow: 1,
+  },
+
 });
