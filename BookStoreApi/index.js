@@ -9,7 +9,6 @@ import {
   genericErrorHandler,
   notFound
 } from './middlewares/error.middleware.js';
-import logger, { logStream } from './config/logger.js';
 
 import morgan from 'morgan';
 
@@ -22,7 +21,7 @@ const api_version = process.env.API_VERSION;
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(morgan('tiny', { stream: logStream }));
+app.use(morgan('tiny'));
 
 database();
 app.use(`/api/${api_version}`, routes());
@@ -32,5 +31,5 @@ app.use(genericErrorHandler);
 app.use(notFound);
 
 app.listen(port, () => {
-  logger.info(`Server started at ${host}:${port}/api/${api_version}/`);
+  console.log(`Server started at ${host}:${port}/api/${api_version}/`);
 });

@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-import logger from './logger.js';
 
 const database = async () => {
   try {
@@ -14,9 +13,9 @@ const database = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true
     });
-    logger.info('Connected to the database.');
+    console.log('Connected to the database.');
   } catch (error) {
-    logger.error('Could not connect to the database.', error);
+    console.log('Could not connect to the database.', error);
   }
 };
 export default database;
